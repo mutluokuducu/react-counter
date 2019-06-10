@@ -57,7 +57,7 @@ class App extends Component {
             <React.Fragment>
                 <NavBar
                     counted={"COUNTED:"+this.state.counters.filter(x=>x.value>0).length}
-                    sum={",  SUM VALUE :"+this.sumTotalCounters()
+                    sum={"SUM VALUE :"+this.sumTotalCounters()
                     }>
                 </NavBar>
 

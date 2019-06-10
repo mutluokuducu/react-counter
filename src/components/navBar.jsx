@@ -1,14 +1,20 @@
 import React, {Component} from 'react';
+
 class navBar extends Component {
 
     render() {
         return (
             <nav className="navbar navbar-light bg-light">
-                  <span className="navbar-text">
+                <span className="badge badge-pill badge-secondary">
 
-                      <h3 className="badge-info">
-                      {this.props.counted}
-                      {this.props.sum}
+                      <h3>
+                       {this.props.sum}
+                      </h3>
+
+                  </span>
+                <span className="badge badge-pill badge-secondary">
+                      <h3>
+                          {this.props.counted}
                       </h3>
 
                   </span>

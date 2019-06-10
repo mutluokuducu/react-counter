@@ -4,6 +4,7 @@ import Counter from './counter'
 class counters extends Component {
 
     render() {
+        const {handleDelete,handleIncrement,handleDecrement}=this.props
         return (
             <React.Fragment>
             <div >
@@ -11,9 +12,9 @@ class counters extends Component {
                 {this.props.counters.map(counter=>
                     <Counter
                         key={counter.id}
-                        onDelete={this.props.handleDelete}
-                        onIncrement={this.props.handleIncrement}
-                        onDecrement={this.props.handleDecrement}
+                        onDelete={handleDelete}
+                        onIncrement={handleIncrement}
+                        onDecrement={handleDecrement}
                         // id={counter.id}
                         // value={counter.value}
                         counter={counter}

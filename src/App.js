@@ -9,9 +9,15 @@ class App extends Component {
             {id:1,value:0},
             {id:2,value:0},
             {id:3,value:0},
-            {id:4,value:4}
+            {id:4,value:0}
         ]
     };
+//cstt
+    constructor() {
+        super();
+        console.log("cons work");
+    }
+
     handleIncrement=counter=>{
         const {counters, index} = this.extracted(counter);
         counters[index].value++;
@@ -22,7 +28,6 @@ class App extends Component {
         /* eslint-disable-next-line no-unused-expressions*/
         counters[index].value===0? 0: counters[index].value--;
         this.setState({counters});
-
     };
 
 
